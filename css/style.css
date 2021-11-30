@@ -33,14 +33,33 @@ header {
 .boton_chevronup:hover {
     padding-top: 0.5em;
 }
-/*main {*/
-  /*max-width: 70ch;*/
-  /*padding: 3em 1em;*/
-  /*margin: auto;*/
-  /*line-height: 1.75;*/
-  /*font-size: 1.25em;*/
-/*}*/
-
+main {
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+h2 {
+    line-height: 2.3;
+    font-size: 2em;
+}
+section {
+    margin: 5em auto;
+}
+.sobremi_svg_contenedor {
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid black;
+}
+.sobremi_svg_contenedor svg {
+    height: 100%;
+}
+.imagen_acordeon_contenedor {
+    background-color: #fff;
+    border: solid black;
+}
 @media screen and (min-width: 600px) {
     .frase_contenedor,.pasos_contenedor {
         max-width: 50vw;
@@ -48,5 +67,8 @@ header {
     }
     .pasos_contenedor {
         margin-top: 9rem;
+    }
+    .chevronup_contenedor {
+        /*padding-top: 5em;*/
     }
 }
