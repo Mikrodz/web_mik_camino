@@ -47,6 +47,7 @@ h2 {
 section {
     margin: 5em auto;
 }
+/*sobre_mi*/
 .sobremi_svg_contenedor {
     background-color: #fff;
     border-radius: 50%;
@@ -56,10 +57,20 @@ section {
 .sobremi_svg_contenedor svg {
     height: 100%;
 }
+/*acordeon*/
 .imagen_acordeon_contenedor {
     background-color: #fff;
     border: solid black;
 }
+.imagen_acordeon_contenedor:hover {
+    box-shadow: 1px 1px 1px grey inset;
+}
+.items_internos {
+    font-size: 0.7em;
+}
+
+
+/*media query intro*/
 @media screen and (min-width: 600px) {
     .frase_contenedor,.pasos_contenedor {
         max-width: 50vw;
