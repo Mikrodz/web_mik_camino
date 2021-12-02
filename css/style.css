@@ -63,12 +63,36 @@ section {
     border: solid black;
 }
 .imagen_acordeon_contenedor:hover {
-    box-shadow: 1px 1px 1px grey inset;
+    opacity: 0.7;
 }
 .items_internos {
     font-size: 0.7em;
 }
-
+.items_internos div {
+    margin: 0.5em;
+}
+#mas_tecnico ul {
+    line-height: 2em;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+.accordion-button::after,.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/chevronup.svg");
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    box-shadow: none;
+}
+.accordion-item {
+    border: none;
+}
 
 /*media query intro*/
 @media screen and (min-width: 600px) {
