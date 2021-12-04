@@ -12,7 +12,8 @@ section.inicio_contenedor {
 .inicio_contenedor {
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-rows: auto;
 }
 .inicio_contenedor p {
     margin: 2em;
@@ -32,6 +33,7 @@ section.inicio_contenedor {
     width: fit-content;
 }
 .chevronup_contenedor svg {
+    display: block;
     max-width: 1em;
     opacity: 0.8;
     justify-self: center;
@@ -106,11 +108,10 @@ section {
 }
 
 /*media query intro*/
-/*@media screen and (min-width: 600px) {*/
-    /*.frase_contenedor,.pasos_contenedor {*/
-        /*max-width: 50vw;*/
+@media screen and (max-width: 600px) {
+    /*.frase_contenedor {*/
     /*}*/
     /*.pasos_contenedor {*/
         /*margin-top: 9rem;*/
     /*}*/
-/*}*/
+}
