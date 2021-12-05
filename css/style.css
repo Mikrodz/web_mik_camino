@@ -1,5 +1,5 @@
 body {
-    background: url("../images/white_paper_fine_grain_texture.jpg") repeat fixed;
+    background: url("../images/white_paper_fine_grain_texture.jpg") no-repeat fixed;
     background-size: cover;
 }
 .navbar-dark .navbar-toggler {
@@ -34,7 +34,7 @@ section.inicio_contenedor {
 }
 .chevronup_contenedor svg {
     display: block;
-    max-width: 1em;
+    width: 1em;
     opacity: 0.8;
     justify-self: center;
 }
@@ -46,6 +46,10 @@ section.inicio_contenedor {
 .boton_chevronup:hover {
     padding-top: 0.5em;
 }
+.collapse, .collapsing, .dropdown-toggle, .navbar-toggler, .dropdown-menu, .dropdown-item, .show, .nav-link, .nav-item, a, aria-expanded {
+    transition: none;
+}
+/*main*/
 main {
   max-width: 70ch;
   padding: 3em 1em;
@@ -108,10 +112,10 @@ section {
 }
 
 /*media query intro*/
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {*/
     /*.frase_contenedor {*/
     /*}*/
     /*.pasos_contenedor {*/
         /*margin-top: 9rem;*/
     /*}*/
-}
+/*}*/
